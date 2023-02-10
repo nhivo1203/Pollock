@@ -1,0 +1,9 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "editor.quickSuggestions": {
+        "strings": true
+      },
+      "tailwindCSS.includeLanguages": {
+        "plaintext": "jade",
+      }
+}

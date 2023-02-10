@@ -1,0 +1,17 @@
+header.header
+    img.header-shapes(srcSet="assets/images/bg-shapes.png", alt="shapes")
+    a.header-scroll(href="#services")
+        .header-scroll-inner
+            img(src="assets/icons/icon-arrow-down.png", alt="scroll")
+    nav.header-nav
+        .container.header-nav-container
+            include logo
+            ul.menu
+                each val in [{href: "/", title: "Home"}, {href:"#", title:"Services"}, {href:"#", title:"About"}, {href:"#", title:"Pages"}, {href:"#", title:"Blog"}, {href:"#", title:"Contact"}]
+                    li.menu-item
+                        a.menu-link(href=val.href)= val.title
+            .tools
+                img(src="assets/icons/icon-search.png", alt="search")
+                img(src="assets/icons/icon-cart.png", alt="cart")
+                button.button.button-signup Sign Up
+    include hero

@@ -1,0 +1,9 @@
+section.portfolio
+    .container
+        h3.heading.heading--large.portfolio-heading Explore our recent client success stories and witness our full 360 transformations come to life
+        .portfolio-list
+            each item in [{name: 'UX/UI Design', img: 'portfolio-ui.png'},{name: 'NFT Market UI', img: 'portfolio-nft.png'},{name: 'Health Mobile App', img: 'portfolio-health.png'},{name: 'Wallet App Development', img: 'portfolio-wallet.png'},]
+                a.portfolio-item(href='#')
+                    .portfolio-image
+                        img(srcSet='assets/images/' + item.img)
+                    h5.heading.heading--small.portfolio-title= item.name

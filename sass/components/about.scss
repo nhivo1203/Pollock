@@ -1,0 +1,153 @@
+.about {
+  background-color: $background-primary;
+  margin-top: 120px;
+
+  &-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px;
+  }
+
+  &-heading {
+    margin-bottom: 30px;
+    margin-top: 120px;
+  }
+
+  &-button {
+    margin-top: 70px;
+    padding: 0 32px;
+    height: 56px;
+  }
+
+  &-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
+
+  &-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+
+    &-content {
+      max-width: 570px;
+      width: 100%;
+    }
+
+    &-heading {
+      margin-bottom: 30px;
+      color: black;
+    }
+
+    &-desc {
+      margin-bottom: 50px;
+      text-align: justify;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+
+      &-title {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .about {
+    &-title {
+      margin: 80px;
+    }
+
+    &-heading {
+      margin-top: 80px;
+    }
+
+    &-button {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &-sections {
+      gap: 100px;
+    }
+
+    &-section {
+      flex-direction: column;
+      gap: 50px;
+
+      &:nth-child(2) {
+        flex-direction: column-reverse;
+      }
+
+      &:last-child {
+        margin-bottom: 80px;
+      }
+
+      &-content {
+        max-width: 100%;
+      }
+
+      &-image {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .about {
+    &-title {
+      margin: 50px;
+    }
+
+    &-heading {
+      margin-top: 50px;
+      font-size: 32px;
+      line-height: calc(48 / 32);
+    }
+
+    &-button {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &-sections {
+      gap: 50px;
+    }
+
+    &-section {
+      flex-direction: column;
+      gap: 50px;
+
+      &:nth-child(2) {
+        flex-direction: column-reverse;
+      }
+
+      &:last-child {
+        margin-bottom: 50px;
+      }
+
+      &-content {
+        max-width: 100%;
+      }
+
+      &-image {
+        max-width: 100%;
+      }
+    }
+  }
+}

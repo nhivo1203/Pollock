@@ -1,0 +1,58 @@
+.cta {
+  background-color: $background-primary;
+  margin-top: 120px;
+  position: relative;
+  padding-top: 106px;
+  padding-bottom: 106px;
+
+  &-shapes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 870px;
+    margin: 0 auto;
+  }
+
+  &-heading {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &-desc {
+    margin-bottom: 65px;
+    text-align: center;
+  }
+
+  &-button {
+    padding: 0px 32px;
+    height: 56px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .cta {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .cta {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-heading {
+      font-size: 32px;
+      line-height: calc(48 / 32);
+    }
+  }
+}
